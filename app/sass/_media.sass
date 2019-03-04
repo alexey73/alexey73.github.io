@@ -1,0 +1,126 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+	#my-wrapper
+		.top-line
+			.menu-a
+				min-width: 115px
+	#my-wrapper
+		.up-menu
+			.menu-line
+				nav.top-menu
+					ul
+						li
+							a
+							&:nth-child(2),&:nth-child(3)
+								display: none
+			.menu-phone
+				// margin: 22px 0
+				// min-width: 185px
+// ≥992px
++media-breakpoint-down(md)
+	
+	#my-wrapper
+		.up-menu
+			.menu-line
+				// display: none
+				// max-width: 380px
+			nav.top-menu
+				ul
+					li
+						a#about-us
+							// display: none
+			.menu-phone
+				max-width: 220px
+			.menu-callback
+				max-width: 240px
+		.top-line
+			.menu-a
+				min-width: 89px
+	#my-wrapper
+		.up-menu
+			.menu-line
+				// display: none
+	
+
+	.content
+		.utp
+			display: inherit
+			.utp-item
+				max-width: 150px
+				display: inline-block
+				padding: 10px
+				.icon
+					padding: 10px 0
+					img
+						width: 65px
+						margin: 0 auto
+					p
+						display: none
+					h4
+						font-weight: 500
+						font-size: 14px
+						text-align: center
+
+	.cta-item
+		.item
+			padding-top: 70px
+			text-align: center
+			.input-email
+				text-align: center
+				margin-right: 0
+
+	#my-wrapper
+		.up-menu
+			.menu-line
+				display: none
+			.menu-phone
+				// width: 220px
+	#my-wrapper
+		.top-line
+			.menu-a
+				a
+					display: none
+					svg
+						display: block
+			.active
+				a
+					display: inline-block
+	// ≥768px
++media-breakpoint-down(sm)
+	
+	#my-wrapper
+		.up-menu
+			.menu-phone
+				min-width: 185px
+	#my-wrapper
+		.up-menu 
+			.logotype
+				a
+					img
+						margin-top: 22px
+// ≥576px
++media-breakpoint-down(xs)
+	
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+	
+// ≤992px
++media-breakpoint-up(lg)
+
+// 
+// ≤1200px
++media-breakpoint-up(xl)
